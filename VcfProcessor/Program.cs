@@ -36,7 +36,7 @@ namespace VcfProcessor
             }
             else
             {
-                outFile = Path.Combine(folder, "contact-groups.csv");
+                outFile = Path.Combine(folder, "../csv/contact-groups.csv");
             }
 
             System.Console.WriteLine($"Starting at '{folder}'...");
