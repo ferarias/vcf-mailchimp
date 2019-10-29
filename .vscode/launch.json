@@ -11,7 +11,7 @@
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/VcfProcessor/bin/Debug/netcoreapp2.2/VcfProcessor.dll",
-            "args": ["${workspaceFolder}/vcf"],
+            "args": ["${workspaceFolder}/vcf", "${workspaceFolder}/csv/contacts.csv"],
             "cwd": "${workspaceFolder}/VcfProcessor",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",

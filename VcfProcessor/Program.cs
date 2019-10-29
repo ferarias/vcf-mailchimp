@@ -29,6 +29,16 @@ namespace VcfProcessor
                 return;
             }
 
+            string outFile;
+            if(args.Length > 1)
+            {
+                outFile = args[1];
+            }
+            else
+            {
+                outFile = Path.Combine(folder, "contact-groups.csv");
+            }
+
             System.Console.WriteLine($"Starting at '{folder}'...");
 
             var data = new Dictionary<string, List<string>>();
@@ -63,7 +73,7 @@ namespace VcfProcessor
             }
 
             // Build the output csv file
-            var outFile = Path.Combine(folder, "contact-groups.csv");
+            
             using (var writer = new StreamWriter(outFile))
             using (var csv = new CsvWriter(writer))
             {    
